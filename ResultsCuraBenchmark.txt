@@ -1,0 +1,30 @@
+Test for Cura 2.7 started.../n
+---> Time to Drag n Drop is: 3.814793348312378/n
+---> Time to slice the '.stl' is: 140.41910362243652/n
+---> Time to show Layer view is: 7.454397439956665/n
+---> Time to send print over network is: 176.21235632896423/n
+---> Time to load the gcode is: 202.75625252723694/n
+---> Time to send the gcode printjob is: 117.53321599960327/n
+---> Time to slice the project file is: 529.378137588501/n
+---> Time to send the project printjob is: 131.1749668121338/n/nTest for Cura 2.7 started...
+Test for Cura 2.7 started...
+---> Time to Drag n Drop is: 1.9067261219024658
+---> Time to slice the '.stl' is: 30.260313749313354
+---> Time to show Layer view is: 10.63544225692749
+---> Time to send print over network is: 47.854896783828735
+---> Time to load the gcode is: 78.33016657829285
+---> Time to send the gcode printjob is: 39.386566162109375
+---> Time to slice the project file is: 39.49944090843201
+---> Time to send the project printjob is: 45.70529556274414
+
+Test for Cura 2.7 started...
+---> Time to open Cura is: 71.33721041679382
+---> Time to Drag n Drop is: 1.7509143352508545
+---> Time to slice the '.stl' is: 17.81472134590149
+---> Time to show Layer view is: 8.61475944519043
+---> Time to send print over network is: 30.708194732666016
+---> Time to load the gcode is: 72.21059107780457
+---> Time to send the gcode printjob is: 33.13735795021057
+---> Time to slice the project file is: 43.46581554412842
+---> Time to send the project printjob is: 73.65273547172546
+
