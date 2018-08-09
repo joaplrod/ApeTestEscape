@@ -3,7 +3,7 @@ import time
 import pyautogui as pya
 import config2 as C2
 
-pya.hotkey('win', 'd') # Minimize all windows and show desktop
+#pya.hotkey('win', 'd') # Minimize all windows and show desktop
 width, height = pya.size()  #1900x1080
 print("Screen size: ", width, "x", height)
 
@@ -36,40 +36,42 @@ f.write('Test for Cura 2.7 started...')
 f.write('\n')
 
 
-# #################################
-# ###### Step 1 - Open Cura #######
-# #################################
-print('Test started...')
-
-#Store shared pict as a variable
-targetImg = 'Cura_logo2.PNG'  #Target Image
-
-#Hotkeys to open cura
-pya.hotkey('win')  #Press Windows button
-pya.typewrite('Cura 2') #Write Cura on the search bar
-pya.hotkey('enter') #Press enter to open Cura
-
-# print("Start time: ",t0)
-t0 = time.time()
-findtarget(targetImg, 0,0,width//4,height//4)
-t1 = time.time()
-# print("End time: ",t1)
-print("---> Time to open Cura is: ", (t1-t0))
-f.write("---> Time to open Cura is: " +  str((t1-t0)))
-f.write('\n')
-
-
-pya.hotkey('alt', 'space')  #Maximize Cura window
-pya.hotkey('x')
-
-pya.alert('Disable automatic slicing and press OK to continue')
-pya.alert('Connect to the printer and press OK to continue')
-
-pya.hotkey('alt', 'space')  #Maximize Cura window
-pya.hotkey('x')
-
+# # #################################
+# # ###### Step 1 - Open Cura #######
+# # #################################
+# print('Test started...')
+#
+# #Store shared pict as a variable
+# targetImg = 'Cura_logo2.PNG'  #Target Image
+#
+# # Click to unfocus the cursor from the .stl file (just in case)
+# pya.click(width//2, height//2)
+#
+# #Hotkeys to open cura
+# pya.hotkey('win')  #Press Windows button
+# pya.typewrite('Cura 2.7.0') #Write Cura on the search bar
+# pya.hotkey('enter') #Press enter to open Cura
+#
+# # print("Start time: ",t0)
+# t0 = time.time()
+# findtarget(targetImg, 0,0,width//2,height//2)
+# t1 = time.time()
+# # print("End time: ",t1)
+# print("---> Time to open Cura is: ", (t1-t0))
+# f.write("---> Time to open Cura is: " +  str((t1-t0)))
+# f.write('\n')
+#
+#
+# pya.hotkey('win', 'up')  #Maximize Cura window
+#
+# #pya.alert('Disable automatic slicing and press OK to continue')
+# #pya.alert('Connect to the printer and press OK to continue')
+#
+# pya.hotkey('win', 'up')
 
 time.sleep(3)
+
+
 # #######################################
 # ###### Step 2 - Drag N Drop .stl ######
 # #######################################
@@ -78,12 +80,11 @@ pya.hotkey('win', 'right')  #Resize Cura to half and anchor to the right side of
 time.sleep(0.5)
 pya.hotkey('esc') # Discard window suggestions for the other half of the screen
 
-file_location = findtarget('file_to_drag2.PNG',0,height//5,width//2,height//2)
+file_location = findtarget('file_to_drag2.PNG', 0, 0,width//2, height//2)
 print('File location found: ', file_location)
 
 #Store target pict as a variable
 targetImg = 'prepare.png'  #Target Image
-result = None
 
 # Position the cursor over the file and drag it to Cura
 pya.moveTo(file_location[0], file_location[1])
@@ -92,7 +93,7 @@ pya.dragTo(width*3//5, height//2, button='left',duration=1)
 
 # print("Start time: ",t0)
 t0 = time.time()
-DnD_result = findtarget('prepare.png',width*9//10,height*8//10,width,height)
+findtarget('prepare.png',width // 2, height // 2, width, height)
 t1 = time.time()
 # print("End time: ",t1)
 print("---> Time to Drag n Drop is: ", (t1-t0))
@@ -107,20 +108,20 @@ print('Step 3 - Slice file')
 
 #pya.click(width*3//4, height//2) #Click on Cura app to set it as current window
 pya.hotkey('win', 'up')
-time.sleep(1)
+time.sleep(0.5)
 pya.hotkey('win', 'up')
 pya.click()
 
 
 # Find location of prepare button and click it
-prepare_location = findtarget('prepare.png', width*7//10,height*8//10,width*8//10,height*9//10)
+prepare_location = findtarget('prepare.png', width//2,height//2,width ,height)
 print('Prepare button found: ', prepare_location)
 
 # Click Prepare button
 pya.click(prepare_location[0], prepare_location[1])
 # print("Start time: ",t0)
 t0 = time.time()
-findtarget('print_over_network.png', width*7//10,height*8//10,width*8//10,height*9//10)
+findtarget('print_over_network.png', width*2//3,height*2//3,width,height)
 t1 = time.time()
 #print("End time: ",t1)
 print("---> Time to slice the '.stl' is: ", (t1-t0))
@@ -142,7 +143,7 @@ pya.hotkey('enter')
 
 # print("Start time: ",t0)
 t0 = time.time()
-findtarget(targetImg, width//5,height//3,width//3,height)
+findtarget(targetImg, 0,height//3,width//3,height)
 t1 = time.time()
 #print("End time: ",t1)
 print("---> Time to show Layer view is: ", (t1-t0))
@@ -168,10 +169,10 @@ print('Print over network button found: ', print_netw_location)
 
 targetImg = 'printing2_7.PNG'  # Target Image
 pya.click(print_netw_location[0], print_netw_location[1])
-
+pya.moveTo(width//2, height//2)
 # print("Start time: ",t0)
 t0 = time.time()
-findtarget(targetImg,width*9//10,height*8//10,width,height)
+findtarget(targetImg,width*2//3,height*2//3,width,height)
 t1 = time.time()
 #print("End time: ",t1)
 print("---> Time to send print over network is: ", (t1-t0))
@@ -198,15 +199,6 @@ pya.hotkey('ctrl','n')
 time.sleep(2)
 pya.hotkey('enter')
 
-# #Select next printer
-# changeptr_locat = findtarget('ChangePtr.PNG',width * 9 // 10, 0, width, height *2 // 10)
-# pya.click(changeptr_locat[0],changeptr_locat[1])
-# time.sleep(1)
-# pya.hotkey('down')
-# time.sleep(0.5)
-# pya.hotkey('down')
-# time.sleep(0.5)
-# pya.hotkey('enter')
 
 
 # #################################
@@ -240,7 +232,9 @@ f.write('\n')
 # #####################################
 
 targetImg = 'printing2_7.PNG'  # Target Image
+pya.moveTo(width//2,height//2)
 pya.click(print_locat[0],print_locat[1])
+
 t0 = time.time()
 findtarget(targetImg,width*9//10,height*8//10,width,height)
 t1 = time.time()
@@ -313,15 +307,17 @@ pya.hotkey('enter')
 print('Step 3 - Slice file')
 
 # Click Prepare button
+pya.click(width//2, height//2)
 pya.click(prepare_location[0], prepare_location[1])
 # print("Start time: ",t0)
 t0 = time.time()
-findtarget('print_over_network.png', width*7//10,height*8//10,width*8//10,height*9//10)
+findtarget('print_over_network.png', width*2//3,height*2//3,width,height)
 t1 = time.time()
 #print("End time: ",t1)
 print("---> Time to slice the project file is: ", (t1-t0))
 f.write("---> Time to slice the project file is: "+ str((t1-t0)))
 f.write('\n')
+
 
 
 # #####################################
