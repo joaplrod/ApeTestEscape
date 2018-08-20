@@ -189,7 +189,7 @@ pya.alert('Abort current printjob and reprinting from printer and press OK to co
 print("Preparing preconditions")
 
 #Go to BP screen
-BPview_locat = findtarget('BPview.PNG',0,0,width*2//10,height*2//10)
+BPview_locat = findtarget('BPview270.png',0,0,width*2//10,height*2//10)
 print("BPview_locat: ", BPview_locat)
 pya.moveTo(BPview_locat[0],BPview_locat[1])
 pya.click(BPview_locat[0],BPview_locat[1])
@@ -252,7 +252,7 @@ pya.alert('Abort current printjob from printer and press OK to continue')
 print("Preparing preconditions")
 
 #Go to BP screen
-BPview_locat = findtarget('BPview.PNG',0,0,width*2//10,height*2//10)
+BPview_locat = findtarget('BPview270.png',0,0,width*2//10,height*2//10)
 print("BPview_locat: ", BPview_locat)
 pya.moveTo(BPview_locat[0],BPview_locat[1])
 pya.click(BPview_locat[0],BPview_locat[1])
