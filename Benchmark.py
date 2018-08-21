@@ -1,7 +1,7 @@
 #! python3
 # Benchmark.py - A Cura benchmark test
 
-import Config2 as C2
+import config2 as C2
 import pyautogui as pya
 import time
 
@@ -30,7 +30,6 @@ width, height = pya.size()
 
 #Chose which version must be tested
 cura_version = "3.4.1"
-#cura_version_str = str(cura_version[0]) + '.' + str(cura_version[1]) + '.' + str(cura_version[2])
 
 C2.LoadVariables(cura_version)
 
