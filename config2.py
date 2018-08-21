@@ -50,16 +50,17 @@ def LoadVariables(version):
   imgPrintjobsent = r'./Pictures/' + version_str + '/' + 'Printjobsent.png'
   imgViewLabel = r'./Pictures/' + version_str + '/' + 'Viewlabel.png'
   imgcleanBP = r'./Pictures/' + version_str + '/' + 'CleanBP.png'
-
-
   return
 
 def LoadAdvanceVariables(version):
   """ Function to load the proper images and variables depending on the Cura version """
   version_str = version.replace(".","")
 
-  global imgobjectpos, imgrotatebtn, imgrotateline, imgmirrorbtn, imgmirrorline, imgmovebtn, imgmoveline
+  global imgIsCuraOpened, imgPreparebtn, imgReady2print, imgobjectpos, imgrotatebtn, imgrotateline, imgmirrorbtn, imgmirrorline, imgmovebtn, imgmoveline
 
+  imgIsCuraOpened = r'./Pictures/' + version_str + '/' + 'CuraOpened.png'
+  imgPreparebtn = r'./Pictures/' + version_str + '/' + 'Preparebtn.png'
+  imgReady2print = r'./Pictures/' + version_str + '/' + 'Ready2print.png'
   imgobjectpos = r'./Pictures/' + version_str + '/' + 'objectpos.png'
   imgrotatebtn = r'./Pictures/' + version_str + '/' + 'rotatebtn.png'
   imgrotateline = r'./Pictures/' + version_str + '/' + 'rotateline.png'
@@ -67,8 +68,6 @@ def LoadAdvanceVariables(version):
   imgmirrorline = r'./Pictures/' + version_str + '/' + 'mirrorline.png'
   imgmovebtn = r'./Pictures/' + version_str + '/' + 'movebtn.png'
   imgmoveline = r'./Pictures/' + version_str + '/' + 'moveline.png'
-
-
   return
 
 
@@ -79,7 +78,6 @@ def OpenCura(version):
   pya.typewrite("cura " + version)
   time.sleep(1.5)
   pya.press('enter')
-
   return
 
 
@@ -90,7 +88,6 @@ def findTarget(TargetImg,Q = (0, 0, width, height)):
   while(Locat_n_Time is None):
     Locat_n_Time = pya.locateCenterOnScreen(TargetImg,region=(Q))
   Locat_n_Time += ((time.time() - tinit),)
-
   return Locat_n_Time
 
 
@@ -101,58 +98,57 @@ def cleanBP():
   pya.hotkey('enter')
   time.sleep(1)
   pya.moveTo(width // 2, height // 2)
-
   return
 
 
 def OpenFile(name):
-  """ To opena  project file / gcode already located in the default open folder (Downloads in this case) """
-  pya.hotkey('ctrl', 'o')
-  time.sleep(1)
-  pya.typewrite(name)
-  time.sleep(1.5)
-  pya.hotkey('enter')
+    """ To open a project file / gcode already located in the default open folder (Downloads in this case) """
+    pya.hotkey('ctrl', 'o')
+    time.sleep(1)
+    pya.typewrite(name)
+    time.sleep(1.5)
+    pya.hotkey('enter')
 
-  if name.endswith('.3mf'):
+    if name.endswith('.3mf'):
       pya.hotkey('enter')
       time.sleep(1)
       pya.hotkey('enter')
-
-  return
+    return
 
 def MaxScreen():
+    """ Maximizes the front window """
     for i in range(0, 2, 1):
         pya.hotkey('win', 'up')
         time.sleep(1)
     return
 
 def MultiModel(n):
-  pya.hotkey('ctrl', 'a')
-  time.sleep(0.5)
-  pya.hotkey('ctrl', 'm')
-  time.sleep(0.5)
-  pya.typewrite(str(n))
-  time.sleep(0.5)
-  pya.hotkey('enter')
-
-  return
+    """ Multiplies the current model 'n' times """
+    pya.hotkey('ctrl', 'a')
+    time.sleep(0.5)
+    pya.hotkey('ctrl', 'm')
+    time.sleep(0.5)
+    pya.typewrite(str(n))
+    time.sleep(0.5)
+    pya.hotkey('enter')
+    return
 
 
 
 
 def Chose6Models(object_pos):
-  pya.keyDown('shift')
-  pya.click((object_pos[0] - 0), (object_pos[1] - 0))
-  time.sleep(0.5)
-  pya.click((object_pos[0] - 50), (object_pos[1] - 0))
-  time.sleep(0.5)
-  pya.click((object_pos[0] - 50), (object_pos[1] - 15))
-  time.sleep(0.5)
-  pya.click((object_pos[0] - 50), (object_pos[1] - 30))
-  time.sleep(0.5)
-  pya.click((object_pos[0] - 100), (object_pos[1] - 0))
-  time.sleep(0.5)
-  pya.click((object_pos[0] - 100), (object_pos[1] - 15))
-  pya.keyUp('shift')
-
-  return
+    """ It choses 6 objects of the 20 multiplied objects (model dependent) """
+    pya.keyDown('shift')
+    pya.click((object_pos[0] - 0), (object_pos[1] - 0))
+    time.sleep(0.5)
+    pya.click((object_pos[0] - 50), (object_pos[1] - 0))
+    time.sleep(0.5)
+    pya.click((object_pos[0] - 50), (object_pos[1] - 15))
+    time.sleep(0.5)
+    pya.click((object_pos[0] - 50), (object_pos[1] - 30))
+    time.sleep(0.5)
+    pya.click((object_pos[0] - 100), (object_pos[1] - 0))
+    time.sleep(0.5)
+    pya.click((object_pos[0] - 100), (object_pos[1] - 15))
+    pya.keyUp('shift')
+    return

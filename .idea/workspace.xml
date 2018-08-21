@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bf6e8c-cffd-462a-822f-7f1db97d2fbd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CuraBenchmark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CuraBenchmark.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/CuraOpened.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/Cura_logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/Cura_logo341..png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/ModelSliced.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Benchmark_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config2.py" beforeDir="false" afterPath="$PROJECT_DIR$/config2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,8 +65,8 @@
       <file leaf-file-name="Benchmark.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="152" selection-start-line="152" selection-end-line="153" selection-end-column="81" />
+            <state relative-caret-position="51">
+              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="234" selection-end-column="32" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -85,8 +77,8 @@
       <file leaf-file-name="Benchmark_advanced.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="273">
+              <caret line="171" column="13" lean-forward="true" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -94,8 +86,8 @@
       <file leaf-file-name="config2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="67" column="65" lean-forward="true" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
+            <state relative-caret-position="850">
+              <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -136,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="528" />
     <option name="width" value="832" />
     <option name="height" value="735" />
@@ -269,7 +261,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
@@ -372,27 +364,27 @@
     <entry file="file://$PROJECT_DIR$/Pictures/prepare.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/config2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="51" column="65" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="152" selection-start-line="152" selection-end-line="153" selection-end-column="81" />
+        <state relative-caret-position="51">
+          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="234" selection-end-column="32" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="67" column="65" lean-forward="true" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="273">
+          <caret line="171" column="13" lean-forward="true" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
         </state>
       </provider>
     </entry>

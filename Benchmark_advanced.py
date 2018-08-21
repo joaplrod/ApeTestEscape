@@ -32,11 +32,9 @@ start_scp = time.time()
 #Chose which version must be tested
 cura_version = "3.4.99"
 
-C2.LoadVariables(cura_version)
 C2.LoadAdvanceVariables(cura_version)
 print("Test for " + cura_version + " started...")
 
-#time.sleep(4)
 
 #Go to desktop (To clear the screen)
 pya.hotkey('win','d')
@@ -74,12 +72,12 @@ object_pos = C2.findTarget(C2.imgobjectpos, C2.Q6)
 C2.MultiModel(20)       # Multiply by 20
 
 multiply_finished = C2.findTarget(C2.imgPreparebtn, C2.Q4)
-print("The time that took to load the 20 .stl model was: " + str(multiply_finished[2]))
+print("The time that took to load the 20 more .stl models was: " + str(multiply_finished[2]))
 pya.click(preparebtn[0],preparebtn[1])
 pya.moveTo(width//2,height//2)
 
 twenmodel_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
-print("The time that took to slice twenty models was: " + str(twenmodel_sliced[2]))
+print("The time that took to slice 21 models was: " + str(twenmodel_sliced[2]))
 
 
 C2.Chose6Models(object_pos)
@@ -88,12 +86,6 @@ rotatebtn = C2.findTarget(C2.imgrotatebtn,C2.Q2)    # Find rotate btn locat
 pya.click(rotatebtn[0], rotatebtn[1])
 rotate_line = C2.findTarget(C2.imgrotateline)
 
-# movebtn = C2.findTarget(C2.imgmovebtn, C2.Q2)       # Find move btn
-# rotate_line = C2.findTarget(C2.imgrotateline)
-# lockbtn = C2.findTarget(C2.imglockbtn, C2.Q2)       # Find lock btn
-# pya.click(lockbtn[0], lockbtn[1])                   # Lock models position
-#
-# pya.click(rotatebtn[0], rotatebtn[1])
 pya.moveTo(rotate_line[0], rotate_line[1])
 pya.dragRel(200,0,1.5)
 
@@ -149,3 +141,36 @@ print("The time that took to slice after noving the models was: " + str(mov_slic
 
 
 pya.alert("Done. " + str(time.time() - start_scp))
+
+#Load info in excel file
+f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsAdvCuraBenchmark.txt','a')
+
+f.write('Test for Cura' + str(cura_version) + ' started...')
+f.write('\n')
+f.write("The time that took to load the .stl model was: " + str(preparebtn[2]))
+f.write('\n')
+f.write("The time that took to slice one model was: " + str(onemodel_sliced[2]))
+f.write('\n')
+f.write("The time that took to load the 20 more .stl models was: " + str(multiply_finished[2]))
+f.write('\n')
+f.write("The time that took to slice 21 models was: " + str(twenmodel_sliced[2]))
+f.write('\n')
+f.write("The time that took to rotate the 6 .stl model was: " + str(rotate_finished[2]))
+f.write('\n')
+f.write("The time that took to slice after rotating the models was: " + str(rot_sliced[2]))
+f.write('\n')
+f.write("The time that took to mirror the 6 .stl model was: " + str(mirror_finished[2]))
+f.write('\n')
+f.write("The time that took to slice after mirroring the models was: " + str(mir_sliced[2]))
+f.write('\n')
+f.write("The time that took to move the 6 .stl model was: " + str(move_finished[2]))
+f.write('\n')
+f.write("The time that took to slice after noving the models was: " + str(mov_sliced[2]))
+f.write('\n')
+f.write("---> Time to run the script was: " + str(time.time() - start_scp))
+f.write('\n')
+f.write('\n')
+
+f.close()
+
+pya.alert("Test is finished...")
