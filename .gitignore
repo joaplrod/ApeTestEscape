@@ -1,4 +1,5 @@
 # Editors
 .idea
 
-*ResultsCuraBenchmark.txt
+*Benchmark.txt
+*.pyc

@@ -99,23 +99,12 @@ print("The time that took to slice the .STL file was: " + str(model_sliced[2]))
 #       #### Layer View #####
 #       #####################
 
-layerview = C2.findTarget(C2.imgViewLabel, C2.Q1)
-pya.click(layerview[0], layerview[1])
-time.sleep(1)
-
-for i in range(0,3,1):
-    pya.hotkey('down')
-    time.sleep(0.5)
-pya.hotkey('enter')
+C2.layerviewOnOff('on')
 
 layerviewloaded = C2.findTarget(C2.ImgLayerView, C2.Q7)
 print("The time that took to show the Layer View was: " + str(layerviewloaded[2]))
 
-# Layer View OFF
-pya.click(layerview[0], layerview[1])
-time.sleep(1)
-pya.hotkey('down')
-pya.hotkey('enter')
+C2.layerviewOnOff('off')
 
 
 

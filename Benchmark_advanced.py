@@ -1,5 +1,5 @@
 #! python3
-# Benchmark_advanced.py - An advanced Cura benchmark test
+# Benchmark_advanced.py - An advanced Cura benchmark scenario
 
 import config2 as C2
 import pyautogui as pya
@@ -29,14 +29,14 @@ width, height = pya.size()
 
 start_scp = time.time()
 
-#Chose which version must be tested
+# Chose which version must be tested
 cura_version = "3.4.99"
 
 C2.LoadAdvanceVariables(cura_version)
 print("Test for " + cura_version + " started...")
 
 
-#Go to desktop (To clear the screen)
+# Go to desktop (To clear the screen)
 pya.hotkey('win','d')
 pya.click(width//2, height //2)
 
@@ -50,7 +50,7 @@ print("The time that took to open Cura was: " + str(Cura_opened[2]))
 # Maximize Cura
 C2.MaxScreen()
 
-
+#time.sleep(4)
 
 #       ###########################
 #       #### Open project file ####
@@ -137,7 +137,46 @@ pya.click(preparebtn[0],preparebtn[1])
 pya.moveTo(width//2,height//2)
 
 mov_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
-print("The time that took to slice after noving the models was: " + str(mov_sliced[2]))
+print("The time that took to slice after moving the models was: " + str(mov_sliced[2]))
+
+#Drag n Drop 3 files
+#Resize Cura window to right side (Drag n Drop file is on the left side of the desktop)
+
+time.sleep(5)
+#preparebtn = C2.findTarget(C2.imgPreparebtn, C2.Q4)
+
+pya.hotkey('win','right')
+time.sleep(0.5)
+pya.hotkey('esc')
+time.sleep(1.5)
+
+DnD3_pos = C2.findTarget(C2.imgDnD3)
+pya.moveTo(1,1)
+pya.dragRel(width // 3, height // 2)
+
+
+# Actually drag and drop the file
+pya.moveTo(DnD3_pos[0], DnD3_pos[1])
+time.sleep(0.5)
+pya.dragTo(width*3//5, height*2//3, button='left', duration=1)
+time.sleep(0.5)
+pya.click()
+
+DnD3_loaded = C2.findTarget(C2.imgPreparebtn, C2.Q4)
+print("The time that took to Drag n Drop the 3 files was: " + str(DnD3_loaded[2]))
+
+pya.hotkey('ctrl','r')
+wait = C2.findTarget(C2.imgPreparebtn, C2.Q4)
+
+pya.click(preparebtn[0],preparebtn[1])
+pya.moveTo(width//2,height//2)
+
+DnD3_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
+print("The time that took to slice after noving the models was: " + str(DnD3_sliced[2]))
+
+# Maximize Cura
+#pya.click()
+C2.MaxScreen()
 
 
 pya.alert("Done. " + str(time.time() - start_scp))
@@ -166,6 +205,10 @@ f.write('\n')
 f.write("The time that took to move the 6 .stl model was: " + str(move_finished[2]))
 f.write('\n')
 f.write("The time that took to slice after noving the models was: " + str(mov_sliced[2]))
+f.write('\n')
+f.write("The time that took to Drag n Drop the 3 files was: " + str(DnD3_loaded[2]))
+f.write('\n')
+f.write("The time that took to slice after noving the models was: " + str(DnD3_sliced[2]))
 f.write('\n')
 f.write("---> Time to run the script was: " + str(time.time() - start_scp))
 f.write('\n')
