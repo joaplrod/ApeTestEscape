@@ -179,7 +179,7 @@ print("The time that took to slice after noving the models was: " + str(DnD3_sli
 C2.MaxScreen()
 
 
-pya.alert("Done. " + str(time.time() - start_scp))
+#pya.alert("Done. " + str(time.time() - start_scp))
 
 #Load info in excel file
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsAdvCuraBenchmark.txt','a')

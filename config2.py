@@ -50,8 +50,6 @@ def LoadVariables(version, extension = '.png'):
 
     Img_file2drag = r'C:/Users/' + str(os.getlogin()) + '/PycharmProjects/CuraBenchmarkfile_to_drag2.PNG'
 
-
-
 def LoadAdvanceVariables(version, extension = '.png'):
     """ Function to load the proper images and variables depending on the
     Cura version and the image extension (.png by default)"""
@@ -78,7 +76,8 @@ def LoadExpertVariables(version, extension = '.png'):
     version_str = version.replace(".", "")
 
     global imgIsCuraOpened, imgPreparebtn, imgReady2print, imgexptest, \
-        imgcustombtn, imgallsetbtn, imgfuzsk, imgtextbx, imgViewLabel, imgLayerView
+        imgcustombtn, imgallsetbtn, imgfuzsk, imgtextbx, imgViewLabel, \
+        imgLayerView, imgresetcustomsett, imgrecombtn
 
     imgIsCuraOpened = r'./Pictures/' + version_str + '/' + 'CuraOpened' + extension
     imgPreparebtn = r'./Pictures/' + version_str + '/' + 'Preparebtn' + extension
@@ -90,6 +89,8 @@ def LoadExpertVariables(version, extension = '.png'):
     imgallsetbtn = r'./Pictures/' + version_str + '/' + 'allsetbtn' + extension
     imgfuzsk = r'./Pictures/' + version_str + '/' + 'fuzsk' + extension
     imgtextbx = r'./Pictures/' + version_str + '/' + 'textbox' + extension
+    imgresetcustomsett = r'./Pictures/' + version_str + '/' + 'resetcustomsett' + extension
+    imgrecombtn = r'./Pictures/' + version_str + '/' + 'recombtn' + extension
 
 def OpenCura(version):
     """ Funtion which opens the corresponding (and installed) Cura version """
@@ -122,6 +123,7 @@ def layerviewOnOff(mode):
         for i in range(0, 2, 1):
             pya.hotkey('down')
             time.sleep(0.5)
+    pya.hotkey('enter')
 
 def cleanBP():
     """ Cleans the build plate of any model and moves the cursor to the midle of the screen """
@@ -179,3 +181,28 @@ def Chose6Models(object_pos):
     time.sleep(0.5)
     pya.click((object_pos[0] - 100), (object_pos[1] - 15))
     pya.keyUp('shift')
+
+def ClearTextBox(btn_locat):
+    pya.click(btn_locat[0] - 200, btn_locat[1])
+    time.sleep(1)
+    pya.hotkey('ctrl', 'a')
+    time.sleep(1)
+
+def TypeTextinTextBox(sentence, btn_locat):
+    pya.typewrite(sentence[0], interval=0.8)
+    time.sleep(1)
+    pya.click(btn_locat[0] - 200, btn_locat[1])
+    time.sleep(1)
+    pya.typewrite(sentence[1:], interval=0.5)
+    
+def ResetExtraset():
+    custombtn = findTarget(imgcustombtn)
+    pya.click(custombtn[0], custombtn[1])
+
+    profilebtn = findTarget(imgresetcustomsett, Q7)
+    pya.click(profilebtn[0], profilebtn[1])
+    time.sleep(1)
+    pya.hotkey('d')
+
+    # recombtn = findTarget(imgrecombtn,Q7)
+    # pya.click(recombtn[0], recombtn[1])

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bf6e8c-cffd-462a-822f-7f1db97d2fbd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Benchmark_Expert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Benchmark_Expert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_Expert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/locksett.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config2.py" beforeDir="false" afterPath="$PROJECT_DIR$/config2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +66,8 @@
       <file leaf-file-name="Benchmark.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+            <state relative-caret-position="-220">
+              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -82,8 +78,8 @@
       <file leaf-file-name="Benchmark_Expert.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="2125">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="e#72#92#0" expanded="true" />
               </folding>
@@ -94,18 +90,12 @@
       <file leaf-file-name="config2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="171">
+              <caret line="197" column="17" selection-start-line="197" selection-start-column="4" selection-end-line="197" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#1879#2974#0" />
-                <element signature="e#2786#2969#0" />
-                <element signature="e#3027#3287#0" />
-                <element signature="e#5032#5365#0" />
-                <element signature="e#3307#3539#0" />
-                <element signature="e#3914#4031#0" />
-                <element signature="e#4057#4269#0" />
-                <element signature="e#4307#4875#0" />
+                <element signature="e#882#1886#0" />
+                <element signature="e#1949#3177#0" />
               </folding>
             </state>
           </provider>
@@ -126,6 +116,7 @@
       <find>imgPreparebtn</find>
       <find>ImgReady2print</find>
       <find>ChangePtr.PNG</find>
+      <find>C2.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,14 +132,14 @@
         <option value="$PROJECT_DIR$/Cura341/Config2.py" />
         <option value="$PROJECT_DIR$/benchmark270.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Benchmark_advanced.py" />
         <option value="$PROJECT_DIR$/Benchmark.py" />
+        <option value="$PROJECT_DIR$/Benchmark_advanced.py" />
         <option value="$PROJECT_DIR$/config2.py" />
         <option value="$PROJECT_DIR$/Benchmark_Expert.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="528" />
     <option name="width" value="832" />
     <option name="height" value="735" />
@@ -159,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +295,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19281046" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19281046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3267974" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -324,7 +315,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -396,20 +387,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="e#75#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="211" selection-start-line="211" selection-end-line="212" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        <state relative-caret-position="-220">
+          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>
@@ -418,33 +413,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="171">
+          <caret line="197" column="17" selection-start-line="197" selection-start-column="4" selection-end-line="197" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1879#2974#0" />
-            <element signature="e#2786#2969#0" />
-            <element signature="e#3027#3287#0" />
-            <element signature="e#5032#5365#0" />
-            <element signature="e#3307#3539#0" />
-            <element signature="e#3914#4031#0" />
-            <element signature="e#4057#4269#0" />
-            <element signature="e#4307#4875#0" />
+            <element signature="e#882#1886#0" />
+            <element signature="e#1949#3177#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+        <state relative-caret-position="2125">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="e#72#92#0" expanded="true" />
           </folding>
