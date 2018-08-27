@@ -29,7 +29,8 @@ width, height = pya.size()
 start_scp = time.time()
 
 # Chose which version must be tested
-cura_version = "3.4.99"
+#cura_version = "3.4.99"
+cura_version = "3.0.4"
 
 C2.LoadExpertVariables(cura_version)
 print("Test for " + cura_version + " started...")
@@ -62,6 +63,8 @@ pya.hotkey('win','right')
 time.sleep(0.5)
 pya.hotkey('esc')
 
+time.sleep(1.5)
+pya.click(width // 3, height // 3)
 
 file_location = C2.findTarget(C2.imgexptest, C2.Q3)
 print('File location found: ', file_location[:-1])

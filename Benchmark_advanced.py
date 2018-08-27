@@ -30,7 +30,9 @@ width, height = pya.size()
 start_scp = time.time()
 
 # Chose which version must be tested
-cura_version = "3.4.99"
+#cura_version = "3.4.99"
+cura_version = "3.0.4"
+
 
 C2.LoadAdvanceVariables(cura_version)
 print("Test for " + cura_version + " started...")
@@ -102,10 +104,11 @@ print("The time that took to slice after rotating the models was: " + str(rot_sl
 # pya.click(rotatereset[0], rotatereset[1])
 
 #   Mirroring step
-mirrorbtn = C2.findTarget(C2.imgmirrorbtn, C2.Q2)     #Mirror set
+mirrorbtn = C2.findTarget(C2.imgmirrorbtn)     #Mirror set
 pya.click(mirrorbtn[0],mirrorbtn[1])        #Click mirror setting
 
 mirror_line = C2.findTarget(C2.imgmirrorline)
+print(mirror_line)
 pya.click(mirror_line[0],mirror_line[1])
 
 
@@ -124,10 +127,12 @@ pya.click(move_set[0],move_set[1])
 pya.moveTo(width // 2, height // 2)
 
 move_line = C2.findTarget(C2.imgmoveline, C2.Q2)
-pya.click((move_line[0] + 50),move_line[1])
+pya.click((move_line[0] + 100),move_line[1])
+print(move_line)
 pya.hotkey('ctrl','a')
 time.sleep(1)
 pya.typewrite('20')
+time.sleep(0.5)
 pya.hotkey('enter')
 
 move_finished = C2.findTarget(C2.imgPreparebtn, C2.Q4)
@@ -185,6 +190,8 @@ C2.MaxScreen()
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsAdvCuraBenchmark.txt','a')
 
 f.write('Test for Cura' + str(cura_version) + ' started...')
+f.write('\n')
+f.write("---> Time to open Cura is: " +  str(Cura_opened[2]))
 f.write('\n')
 f.write("The time that took to load the .stl model was: " + str(preparebtn[2]))
 f.write('\n')

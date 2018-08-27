@@ -29,7 +29,9 @@ import time
 width, height = pya.size()
 
 #Chose which version must be tested
-cura_version = "3.4.1"
+#cura_version = "3.4.1"
+#cura_version = "3.4.99"
+cura_version = "3.0.4"
 
 C2.LoadVariables(cura_version)
 
@@ -37,6 +39,7 @@ print("Test for " + cura_version + " started...")
 
 #Go to desktop (To clear the screen)
 pya.hotkey('win','d')
+time.sleep(0.5)
 pya.click(width//2, height //2)
 
 
@@ -50,7 +53,6 @@ print("The time that took to open Cura was: " + str(Cura_opened[2]))
 C2.MaxScreen()
 
 
-
 #       #####################
 #       #### Drag n Drop ####
 #       #####################
@@ -60,8 +62,10 @@ pya.hotkey('win','right')
 time.sleep(0.5)
 pya.hotkey('esc')
 
+time.sleep(1.5)
+pya.click(width // 3, height // 3)
 
-file_location = C2.findTarget(C2.Img_file2drag)
+file_location = C2.findTarget(C2.imgfile2drag, C2.Q3)
 print('File location found: ', file_location[:-1])
 
 # Actually drag and drop the file
@@ -94,18 +98,16 @@ print("The time that took to slice the .STL file was: " + str(model_sliced[2]))
 
 
 
-
 #       #####################
 #       #### Layer View #####
 #       #####################
 
 C2.layerviewOnOff('on')
 
-layerviewloaded = C2.findTarget(C2.ImgLayerView, C2.Q7)
+layerviewloaded = C2.findTarget(C2.imgLayerView, C2.Q7)
 print("The time that took to show the Layer View was: " + str(layerviewloaded[2]))
 
 C2.layerviewOnOff('off')
-
 
 
 #       #######################
@@ -113,7 +115,13 @@ C2.layerviewOnOff('off')
 #       #######################
 
 pya.click(prepare_btn) # Press Prepare (Also Print btn locat)
-printjobesent = C2.findTarget(C2.ImgPrintjobsent, C2.Q3)
+time.sleep(1)
+pya.hotkey('a')
+time.sleep(1)
+pya.hotkey('enter')
+time.sleep(1)
+pya.hotkey('enter')
+printjobesent = C2.findTarget(C2.imgPrintjobsent, C2.Q3)
 print("The time that took to send the print job was: " + str(printjobesent[2]))
 
 #Clean buildplate
@@ -148,22 +156,27 @@ print("The time that took to slice the .3mf file was: " + str(project_sliced[2])
 #       #### Layer View #####
 #       #####################
 
-pya.click(layerview[0], layerview[1])
-time.sleep(1)
-for i in range(0,3,1):
-    pya.hotkey('down')
-    time.sleep(0.5)
-pya.hotkey('enter')
+C2.layerviewOnOff('on')
 
-layerviewloaded3mf = C2.findTarget(C2.ImgLayerView, C2.Q7)
+layerviewloaded3mf = C2.findTarget(C2.imgLayerView, C2.Q7)
 print("The time that took to show the Layer View of the .3mf was: " + str(layerviewloaded3mf[2]))
+
+C2.layerviewOnOff('off')
+
+
 
 #       #######################
 #       #### Send Printjob ####
 #       #######################
 
 pya.click(prepare_btn) # Press Prepare (Also Print btn locat)
-projectsent = C2.findTarget(C2.ImgPrintjobsent, C2.Q3)
+time.sleep(1)
+pya.hotkey('a')
+time.sleep(1)
+pya.hotkey('enter')
+time.sleep(1)
+pya.hotkey('enter')
+projectsent = C2.findTarget(C2.imgPrintjobsent, C2.Q3)
 print("The time that took to send the project file was: " + str(projectsent[2]))
 
 
@@ -187,7 +200,13 @@ print("The time that took to load the .gcode file was: " + str(gcode_loaded[2]))
 #       #######################
 
 pya.click(prepare_btn) # Press Prepare (Also Print btn locat)
-gcodesent = C2.findTarget(C2.ImgPrintjobsent, C2.Q3)
+time.sleep(1)
+pya.hotkey('a')
+time.sleep(1)
+pya.hotkey('enter')
+time.sleep(1)
+pya.hotkey('enter')
+gcodesent = C2.findTarget(C2.imgPrintjobsent, C2.Q3)
 print("The time that took to send the gcode was: " + str(gcodesent[2]))
 
 

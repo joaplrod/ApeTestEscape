@@ -38,7 +38,7 @@ def LoadVariables(version, extension = '.png'):
      Cura version and the image extension (.png by default) """
     version_str = version.replace(".", "")
     global imgIsCuraOpened, imgPreparebtn, imgReady2print, imgLayerView, imgPrintjobsent, \
-        imgViewLabel, imgcleanBP, imgobjectpos, Img_file2drag
+        imgViewLabel, imgcleanBP, imgobjectpos, imgfile2drag
 
     imgIsCuraOpened = r'./Pictures/' + version_str + '/' + 'CuraOpened'+ extension
     imgPreparebtn = r'./Pictures/' + version_str + '/' + 'Preparebtn'+ extension
@@ -48,7 +48,7 @@ def LoadVariables(version, extension = '.png'):
     imgViewLabel = r'./Pictures/' + version_str + '/' + 'Viewlabel'+ extension
     imgcleanBP = r'./Pictures/' + version_str + '/' + 'CleanBP' + extension
 
-    Img_file2drag = r'C:/Users/' + str(os.getlogin()) + '/PycharmProjects/CuraBenchmarkfile_to_drag2.PNG'
+    imgfile2drag = r'./Pictures/' + version_str + '/' + 'file_to_drag' + extension
 
 def LoadAdvanceVariables(version, extension = '.png'):
     """ Function to load the proper images and variables depending on the
@@ -105,6 +105,7 @@ def findTarget(TargetImg, Q=(0, 0, width, height)):
     """ Find the picture and measure the time it takes """
     tinit = time.time()
     Locat_n_Time = None
+    print('entered in the loop')
     while (Locat_n_Time is None):
         Locat_n_Time = pya.locateCenterOnScreen(TargetImg, region=(Q))
     Locat_n_Time += ((time.time() - tinit),)
@@ -170,15 +171,15 @@ def Chose6Models(object_pos):
     """ It choses 6 objects of the 20 multiplied objects (model dependent) """
     pya.keyDown('shift')
     pya.click((object_pos[0] - 0), (object_pos[1] - 0))
-    time.sleep(0.5)
+    time.sleep(0.8)
     pya.click((object_pos[0] - 50), (object_pos[1] - 0))
-    time.sleep(0.5)
+    time.sleep(0.8)
     pya.click((object_pos[0] - 50), (object_pos[1] - 15))
-    time.sleep(0.5)
+    time.sleep(0.8)
     pya.click((object_pos[0] - 50), (object_pos[1] - 30))
-    time.sleep(0.5)
+    time.sleep(0.8)
     pya.click((object_pos[0] - 100), (object_pos[1] - 0))
-    time.sleep(0.5)
+    time.sleep(0.8)
     pya.click((object_pos[0] - 100), (object_pos[1] - 15))
     pya.keyUp('shift')
 
