@@ -76,3 +76,27 @@ Test for Cura3.0.4 started...
 ---> Time to load the gcode is: 79.64003133773804
 ---> Time to send the gcode printjob is: 4.9506659507751465
 
+Test for Cura3.2 started...
+---> Time to open Cura is: 21.295382022857666
+---> Time to Drag n Drop is: 3.6424365043640137
+---> Time to slice the '.stl' is: 12.625926971435547
+---> Time to show Layer view is of the .stl is: 4.896664142608643
+---> Time to send print over network is: 2.0231449604034424
+---> Time to load the project file is: 4.591957330703735
+---> Time to slice the project file is: 9.0052011013031
+---> Time to send the project file printjob is: 1.0696461200714111
+---> Time to load the gcode is: 145.67111134529114
+---> Time to send the gcode printjob is: 6.737942457199097
+
+Test for Cura3.2.1 started...
+---> Time to open Cura is: 26.845720529556274
+---> Time to Drag n Drop is: 3.913916826248169
+---> Time to slice the '.stl' is: 24.864749670028687
+---> Time to show Layer view is of the .stl is: 6.3483686447143555
+---> Time to send print over network is: 1.4150195121765137
+---> Time to load the project file is: 4.804322004318237
+---> Time to slice the project file is: 10.140379428863525
+---> Time to send the project file printjob is: 1.0917422771453857
+---> Time to load the gcode is: 143.1574728488922
+---> Time to send the gcode printjob is: 6.6810736656188965
+

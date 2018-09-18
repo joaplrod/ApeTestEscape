@@ -31,7 +31,9 @@ width, height = pya.size()
 #Chose which version must be tested
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
-cura_version = "3.0.4"
+#cura_version = "3.0.4"
+#cura_version = "3.2.0"
+cura_version = "3.2.1"
 
 C2.LoadVariables(cura_version)
 
@@ -59,7 +61,7 @@ C2.MaxScreen()
 
 # Resize Cura window to right side (Drag n Drop file is on the left side of the desktop)
 pya.hotkey('win','right')
-time.sleep(0.5)
+time.sleep(1)
 pya.hotkey('esc')
 
 time.sleep(1.5)
@@ -240,5 +242,6 @@ f.write('\n')
 
 f.close()
 
+C2.CloseCura()
 pya.alert("Test is finished...")
 

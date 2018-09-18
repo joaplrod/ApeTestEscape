@@ -29,8 +29,12 @@ width, height = pya.size()
 start_scp = time.time()
 
 # Chose which version must be tested
+#cura_version = "3.4.1"
 #cura_version = "3.4.99"
-cura_version = "3.0.4"
+#cura_version = "3.0.4"
+#cura_version = "3.2.0"
+cura_version = "3.2.1"
+
 
 C2.LoadExpertVariables(cura_version)
 print("Test for " + cura_version + " started...")
@@ -115,14 +119,16 @@ C2.layerviewOnOff('off')
 #       ##########################
 
 
-# prepare_btn = (1302, 697)
+
+
+#prepare_btn = (1302, 697)
 
 C2.ResetExtraset()
 
 # custombtn = C2.findTarget(C2.imgcustombtn)
 # pya.click(custombtn[0], custombtn[1])
 
-textbxbtn = C2.findTarget(C2.imgtextbx, C2.Q7)
+textbxbtn = C2.findTarget(C2.imgtextbx)
 time.sleep(1)
 
 C2.TypeTextinTextBox('build plate adhesion type', textbxbtn)
@@ -156,7 +162,7 @@ pya.hotkey('enter')
 C2.ClearTextBox(textbxbtn)
 C2.TypeTextinTextBox('fuzzy skin', textbxbtn)
 
-fzyskbtn = C2.findTarget(C2.imgfuzsk, C2.Q4)
+fzyskbtn = C2.findTarget(C2.imgfuzsk, (width*2//3,0,width,height))
 pya.click(fzyskbtn[0], fzyskbtn[1])
 
 
@@ -166,7 +172,7 @@ pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img change
 modif_model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the complex .STL file with modifications was: " + str(modif_model_sliced[2]))
 
-#pya.alert("Done...")
+
 
 #Load info in excel file
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsExpCuraBenchmark.txt','a')

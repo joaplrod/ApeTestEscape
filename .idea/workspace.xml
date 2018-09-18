@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bf6e8c-cffd-462a-822f-7f1db97d2fbd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_Expert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_Expert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
@@ -69,8 +68,8 @@
       <file leaf-file-name="Benchmark.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Benchmark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+            <state relative-caret-position="459">
+              <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -81,8 +80,8 @@
       <file leaf-file-name="Benchmark_advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -90,8 +89,8 @@
       <file leaf-file-name="Benchmark_Expert.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#72#92#0" expanded="true" />
               </folding>
@@ -102,14 +101,18 @@
       <file leaf-file-name="config2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="191" selection-start-line="191" selection-end-line="191" />
+            <state relative-caret-position="409">
+              <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#882#1862#0" />
                 <element signature="e#1923#3151#0" />
-                <element signature="e#3211#4550#0" />
                 <element signature="e#4579#4772#0" />
+                <element signature="e#6173#6290#0" />
+                <element signature="e#6316#6528#0" />
+                <element signature="e#6565#7133#0" />
+                <element signature="e#7168#7275#0" />
+                <element signature="e#7325#7495#0" />
               </folding>
             </state>
           </provider>
@@ -154,17 +157,17 @@
         <option value="$PROJECT_DIR$/Cura341/Config2.py" />
         <option value="$PROJECT_DIR$/benchmark270.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Benchmark.py" />
-        <option value="$PROJECT_DIR$/config2.py" />
         <option value="$PROJECT_DIR$/Benchmark_advanced.py" />
         <option value="$PROJECT_DIR$/Benchmark_Expert.py" />
+        <option value="$PROJECT_DIR$/config2.py" />
+        <option value="$PROJECT_DIR$/Benchmark.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="524" />
-    <option name="height" value="735" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -218,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Benchmark_Expert">
+  <component name="RunManager" selected="Python.Benchmark_advanced">
     <configuration name="Benchmark" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CuraBenchmark" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -318,9 +321,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Benchmark_Expert" />
         <item itemvalue="Python.Benchmark_advanced" />
         <item itemvalue="Python.Benchmark" />
+        <item itemvalue="Python.Benchmark_Expert" />
         <item itemvalue="Python.benchmark" />
         <item itemvalue="Python.Benchmark341" />
       </list>
@@ -468,44 +471,48 @@
     <entry file="file://$PROJECT_DIR$/Pictures/3499/resetcustomsett.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#882#1862#0" />
-            <element signature="e#1923#3151#0" />
-            <element signature="e#3211#4550#0" />
-            <element signature="e#4579#4772#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pictures/3499/textbox.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#72#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#882#1862#0" />
+            <element signature="e#1923#3151#0" />
+            <element signature="e#4579#4772#0" />
+            <element signature="e#6173#6290#0" />
+            <element signature="e#6316#6528#0" />
+            <element signature="e#6565#7133#0" />
+            <element signature="e#7168#7275#0" />
+            <element signature="e#7325#7495#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        <state relative-caret-position="459">
+          <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>

@@ -18,15 +18,6 @@ Q6 = [width // 3, height // 2, width * 2 // 3, height]
 Q7 = [width // 2, height // 3, width, height * 2 // 3]
 Q8 = [0, height // 3, width // 2, height * 2 // 3]
 
-# # Images variables
-# imgIsCuraOpened = None
-# imgPreparebtn = None
-# imgReady2print = None
-# imgLayerView = None
-# imgPrintjobsent = None
-# imgViewLabel = None
-# imgcleanBP = None
-
 
 #       ###################
 #       #### FUNCTIONS ####
@@ -197,13 +188,17 @@ def TypeTextinTextBox(sentence, btn_locat):
     pya.typewrite(sentence[1:], interval=0.5)
     
 def ResetExtraset():
-    custombtn = findTarget(imgcustombtn)
+    custombtn = findTarget(imgcustombtn, (width *2 // 3, 0, width, height))
+    #custombtn = findTarget(imgcustombtn)
     pya.click(custombtn[0], custombtn[1])
-
-    profilebtn = findTarget(imgresetcustomsett, Q7)
+    profilebtn = findTarget(imgresetcustomsett, (width *2 // 3, 0, width, height))
     pya.click(profilebtn[0], profilebtn[1])
     time.sleep(1)
     pya.hotkey('d')
 
     # recombtn = findTarget(imgrecombtn,Q7)
     # pya.click(recombtn[0], recombtn[1])
+
+def CloseCura():
+    pya.hotkey('alt','F4')
+    pya.hotkey('enter')
