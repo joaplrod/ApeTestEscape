@@ -28,12 +28,15 @@ import time
 
 width, height = pya.size()
 
-#Chose which version must be tested
+# Chose which version must be tested
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
 #cura_version = "3.0.4"
-#cura_version = "3.2.0"
-cura_version = "3.2.1"
+cura_version = "3.2.0"
+#cura_version = "3.2.99"
+#cura_version = "3.3"
+#cura_version = "3.4.0"
+#cura_version = "3.4.99"
 
 C2.LoadVariables(cura_version)
 
@@ -97,7 +100,6 @@ pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img change
 
 model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the .STL file was: " + str(model_sliced[2]))
-
 
 
 #       #####################

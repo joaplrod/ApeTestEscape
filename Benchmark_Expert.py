@@ -32,8 +32,11 @@ start_scp = time.time()
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
 #cura_version = "3.0.4"
-#cura_version = "3.2.0"
-cura_version = "3.2.1"
+cura_version = "3.2.0"
+#cura_version = "3.2.99"
+#cura_version = "3.3"
+#cura_version = "3.4.0"
+#cura_version = "3.4.99"
 
 
 C2.LoadExpertVariables(cura_version)
@@ -64,13 +67,13 @@ C2.MaxScreen()
 
 # Resize Cura window to right side (Drag n Drop file is on the left side of the desktop)
 pya.hotkey('win','right')
-time.sleep(0.5)
+time.sleep(1.5)
 pya.hotkey('esc')
 
 time.sleep(1.5)
 pya.click(width // 3, height // 3)
 
-file_location = C2.findTarget(C2.imgexptest, C2.Q3)
+file_location = C2.findTarget(C2.imgexptest)
 print('File location found: ', file_location[:-1])
 
 # Actually drag and drop the file
@@ -194,4 +197,7 @@ f.write('\n')
 f.write('\n')
 f.close()
 
-#pya.alert("Test is finished...")
+#C2.CloseCura()
+pya.win.close()
+print("Test is finished...")
+pya.alert("Test is finished...")

@@ -100,3 +100,51 @@ Test for Cura3.2.1 started...
 ---> Time to load the gcode is: 143.1574728488922
 ---> Time to send the gcode printjob is: 6.6810736656188965
 
+Test for Cura3.3 started...
+---> Time to open Cura is: 19.031221389770508
+---> Time to Drag n Drop is: 4.098687410354614
+---> Time to slice the '.stl' is: 14.002352237701416
+---> Time to show Layer view is of the .stl is: 5.025425910949707
+---> Time to send print over network is: 5.114772081375122
+---> Time to load the project file is: 7.539624452590942
+---> Time to slice the project file is: 17.381364583969116
+---> Time to send the project file printjob is: 3.3970367908477783
+---> Time to load the gcode is: 131.83467435836792
+---> Time to send the gcode printjob is: 22.00406765937805
+
+Test for Cura3.4.0 started...
+---> Time to open Cura is: 23.333019971847534
+---> Time to Drag n Drop is: 2.3330533504486084
+---> Time to slice the '.stl' is: 16.16273784637451
+---> Time to show Layer view is of the .stl is: 6.1348042488098145
+---> Time to send print over network is: 8.309657573699951
+---> Time to load the project file is: 6.121351480484009
+---> Time to slice the project file is: 7.455785274505615
+---> Time to send the project file printjob is: 2.426374912261963
+---> Time to load the gcode is: 144.93022918701172
+---> Time to send the gcode printjob is: 21.883291244506836
+
+Test for Cura3.4.99 started...
+---> Time to open Cura is: 17.14232110977173
+---> Time to Drag n Drop is: 2.2746639251708984
+---> Time to slice the '.stl' is: 17.041067361831665
+---> Time to show Layer view is of the .stl is: 6.308471441268921
+---> Time to send print over network is: 7.731759548187256
+---> Time to load the project file is: 4.79885196685791
+---> Time to slice the project file is: 8.20186448097229
+---> Time to send the project file printjob is: 2.281151056289673
+---> Time to load the gcode is: 139.53706073760986
+---> Time to send the gcode printjob is: 20.800471544265747
+
+Test for Cura3.2.0 started...
+---> Time to open Cura is: 24.149462938308716
+---> Time to Drag n Drop is: 1.8824515342712402
+---> Time to slice the '.stl' is: 11.869500160217285
+---> Time to show Layer view is of the .stl is: 4.696637868881226
+---> Time to send print over network is: 0.8459277153015137
+---> Time to load the project file is: 3.997877836227417
+---> Time to slice the project file is: 9.169019937515259
+---> Time to send the project file printjob is: 1.1144969463348389
+---> Time to load the gcode is: 135.35098934173584
+---> Time to send the gcode printjob is: 6.461193323135376
+

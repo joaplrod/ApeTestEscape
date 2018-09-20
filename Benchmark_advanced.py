@@ -33,9 +33,11 @@ start_scp = time.time()
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
 #cura_version = "3.0.4"
-#cura_version = "3.2.0"
-cura_version = "3.2.1"
-
+cura_version = "3.2.0"
+#cura_version = "3.2.99"
+#cura_version = "3.3"
+#cura_version = "3.4.0"
+#cura_version = "3.4.99"
 
 
 C2.LoadAdvanceVariables(cura_version)
@@ -133,16 +135,28 @@ pya.moveTo(width // 2, height // 2)
 move_line = C2.findTarget(C2.imgmoveline, C2.Q2)
 pya.click((move_line[0] + 100),move_line[1])
 print(move_line)
+
+
 pya.hotkey('ctrl','a')
-time.sleep(1)
-pya.typewrite('20')
-time.sleep(0.5)
+time.sleep(1.5)
+pya.typewrite('8')
+time.sleep(1.5)
+pya.hotkey('enter')
+time.sleep(1.5)
+pya.hotkey('ctrl','a')
+time.sleep(1.5)
+pya.typewrite('5')
+time.sleep(1.5)
 pya.hotkey('enter')
 
 move_finished = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 print("The time that took to move the 6 .stl model was: " + str(move_finished[2]))
 
+time.sleep(5)
+pya.moveTo(preparebtn[0],preparebtn[1])
+time.sleep(2)
 pya.click(preparebtn[0],preparebtn[1])
+
 pya.moveTo(width//2,height//2)
 
 mov_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
@@ -151,13 +165,14 @@ print("The time that took to slice after moving the models was: " + str(mov_slic
 #Drag n Drop 3 files
 #Resize Cura window to right side (Drag n Drop file is on the left side of the desktop)
 
-time.sleep(5)
+time.sleep(2)
 #preparebtn = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 
 pya.hotkey('win','right')
-time.sleep(0.5)
+time.sleep(1.5)
 pya.hotkey('esc')
 time.sleep(1.5)
+pya.hotkey('esc')
 
 DnD3_pos = C2.findTarget(C2.imgDnD3)
 pya.moveTo(1,1)
@@ -166,9 +181,9 @@ pya.dragRel(width // 3, height // 2)
 
 # Actually drag and drop the file
 pya.moveTo(DnD3_pos[0], DnD3_pos[1])
-time.sleep(0.5)
+time.sleep(1.5)
 pya.dragTo(width*3//5, height*2//3, button='left', duration=1)
-time.sleep(0.5)
+time.sleep(1.5)
 pya.click()
 
 DnD3_loaded = C2.findTarget(C2.imgPreparebtn, C2.Q4)
@@ -227,4 +242,5 @@ f.write('\n')
 
 f.close()
 
+C2.CloseCura()
 pya.alert("Test is finished...")

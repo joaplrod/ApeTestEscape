@@ -85,11 +85,8 @@ def LoadExpertVariables(version, extension = '.png'):
 
 def OpenCura(version):
     """ Funtion which opens the corresponding (and installed) Cura version """
-    pya.press('win')
-    time.sleep(1)
-    pya.typewrite("cura " + version)
-    time.sleep(1.5)
-    pya.press('enter')
+    path = "C:\\Program Files\\Ultimaker Cura " + version + "\\cura.exe"
+    os.startfile(path)
 
 
 def findTarget(TargetImg, Q=(0, 0, width, height)):
@@ -98,7 +95,7 @@ def findTarget(TargetImg, Q=(0, 0, width, height)):
     Locat_n_Time = None
     print('entered in the loop')
     while (Locat_n_Time is None):
-        Locat_n_Time = pya.locateCenterOnScreen(TargetImg, region=(Q))
+        Locat_n_Time = pya.locateCenterOnScreen(TargetImg, region=(Q), grayscale=True)
     Locat_n_Time += ((time.time() - tinit),)
     return Locat_n_Time
 
@@ -144,7 +141,9 @@ def MaxScreen():
     """ Maximizes the front window """
     for i in range(0, 2, 1):
         pya.hotkey('win', 'up')
-        time.sleep(1)
+        time.sleep(1.5)
+        pya.hotkey("esc")
+        time.sleep(1.5)
 
 
 def MultiModel(n):
