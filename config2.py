@@ -200,4 +200,5 @@ def ResetExtraset():
 
 def CloseCura():
     pya.hotkey('alt','F4')
+    pya.click(1,1)
     pya.hotkey('enter')

@@ -33,6 +33,7 @@ start_scp = time.time()
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
 #cura_version = "3.0.4"
+#cura_version = "3.1"
 cura_version = "3.2.0"
 #cura_version = "3.2.99"
 #cura_version = "3.3"
@@ -137,17 +138,14 @@ pya.click((move_line[0] + 100),move_line[1])
 print(move_line)
 
 
-pya.hotkey('ctrl','a')
-time.sleep(1.5)
-pya.typewrite('8')
-time.sleep(1.5)
-pya.hotkey('enter')
-time.sleep(1.5)
+pya.hotkey('ctrl','r')
+C2.findTarget(C2.imgPreparebtn, C2.Q4)
 pya.hotkey('ctrl','a')
 time.sleep(1.5)
 pya.typewrite('5')
 time.sleep(1.5)
 pya.hotkey('enter')
+
 
 move_finished = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 print("The time that took to move the 6 .stl model was: " + str(move_finished[2]))
@@ -176,7 +174,9 @@ pya.hotkey('esc')
 
 DnD3_pos = C2.findTarget(C2.imgDnD3)
 pya.moveTo(1,1)
-pya.dragRel(width // 3, height // 2)
+time.sleep(1)
+pya.dragRel(width // 3, height // 2, duration=1)
+time.sleep(1)
 
 
 # Actually drag and drop the file
@@ -191,12 +191,12 @@ print("The time that took to Drag n Drop the 3 files was: " + str(DnD3_loaded[2]
 
 pya.hotkey('ctrl','r')
 wait = C2.findTarget(C2.imgPreparebtn, C2.Q4)
-
+time.sleep(1)
 pya.click(preparebtn[0],preparebtn[1])
 pya.moveTo(width//2,height//2)
 
 DnD3_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
-print("The time that took to slice after noving the models was: " + str(DnD3_sliced[2]))
+print("The time that took to slice after moving the models was: " + str(DnD3_sliced[2]))
 
 # Maximize Cura
 #pya.click()

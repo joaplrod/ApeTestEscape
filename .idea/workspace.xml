@@ -2,58 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bf6e8c-cffd-462a-822f-7f1db97d2fbd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_Expert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_Expert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pictures/304/DnD3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/DnD3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/304/ExpTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/ExpTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/304/file_to_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/file_to_drag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/DnD3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/DnD3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/ExpTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/ExpTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/file_to_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/file_to_drag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/mirrorline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/mirrorline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/rotateline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/rotateline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/CuraOpened.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/DnD3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/ExpTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/Layerview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/Preparebtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/Printjobsent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/Ready2print.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/ViewLabel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/cleanBP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/custombtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/file_to_drag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/fuzsk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/mirrorbtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/mirrorline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/movebtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/moveline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/objectpos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/recombtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/resetcustomsett.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/rotatebtn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/rotateline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/rotatereset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/321/textbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/DnD3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/DnD3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/ExpTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/ExpTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/Layerview.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/Layerview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/Preparebtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/Preparebtn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/Ready2print.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/Ready2print.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/ViewLabel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/ViewLabel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/cleanBP.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/cleanBP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/custombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/custombtn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/file_to_drag.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/file_to_drag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/fuzsk.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/fuzsk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/mirrorline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/mirrorline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/moveline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/moveline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/objectpos.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/objectpos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/recombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/recombtn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/resetcustomsett.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/resetcustomsett.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/rotateline.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/rotateline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/3499/textbox.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/3499/textbox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures/320/custombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/custombtn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures/320/recombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/recombtn.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResultsCuraBenchmark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ResultsCuraBenchmark.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config2.py" beforeDir="false" afterPath="$PROJECT_DIR$/config2.py" afterDir="false" />
     </list>
@@ -117,8 +71,8 @@
       <file leaf-file-name="Benchmark.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1530">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="255">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -129,8 +83,8 @@
       <file leaf-file-name="Benchmark_advanced.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+            <state relative-caret-position="413">
+              <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -138,8 +92,8 @@
       <file leaf-file-name="Benchmark_Expert.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2823">
-              <caret line="200" column="15" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="15" />
+            <state relative-caret-position="153">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#72#92#0" expanded="true" />
               </folding>
@@ -147,16 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BPview270.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pictures/BPview270.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file leaf-file-name="config2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+            <state relative-caret-position="243">
+              <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#699#1679#0" />
@@ -213,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="524" />
     <option name="height" value="735" />
@@ -346,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
@@ -354,7 +303,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19281046" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3529412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3267974" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -371,22 +320,22 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19281046" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32629558" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3251634" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3267974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32629558" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -398,7 +347,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Cura341/Prepare3.0.4.PNG" />
     <entry file="file://$PROJECT_DIR$/Cura341/printjobsent.PNG" />
     <entry file="file://$PROJECT_DIR$/Cura341/ModelLoaded.png" />
     <entry file="file://$PROJECT_DIR$/Cura341/Prepare3_0_4.PNG" />
@@ -476,10 +424,16 @@
     <entry file="file://$PROJECT_DIR$/Pictures/3499/textbox.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pictures/BPview270.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pictures/31/file_to_drag.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/config2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="145" column="23" selection-start-line="145" selection-start-column="23" selection-end-line="145" selection-end-column="23" />
+        <state relative-caret-position="243">
+          <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#699#1679#0" />
@@ -489,13 +443,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pictures/BPview270.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="255">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>
@@ -504,8 +455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2823">
-          <caret line="200" column="15" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#72#92#0" expanded="true" />
           </folding>
@@ -514,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+        <state relative-caret-position="413">
+          <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
         </state>
       </provider>
     </entry>
