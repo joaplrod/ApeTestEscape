@@ -32,9 +32,9 @@ start_scp = time.time()
 # Chose which version must be tested
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
-#cura_version = "3.0.4"
+cura_version = "3.0.4"
 #cura_version = "3.1"
-cura_version = "3.2.0"
+#cura_version = "3.2.0"
 #cura_version = "3.2.99"
 #cura_version = "3.3"
 #cura_version = "3.4.0"
@@ -243,4 +243,4 @@ f.write('\n')
 f.close()
 
 C2.CloseCura()
-pya.alert("Test is finished...")
+#pya.alert("Test is finished...")

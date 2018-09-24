@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bf6e8c-cffd-462a-822f-7f1db97d2fbd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_Expert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_Expert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Benchmark_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/Benchmark_advanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/304/DnD3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/DnD3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/custombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/custombtn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/320/recombtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/320/recombtn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures/304/ExpTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/ExpTest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures/304/ViewLabel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/304/ViewLabel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResultsCuraBenchmark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ResultsCuraBenchmark.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config2.py" beforeDir="false" afterPath="$PROJECT_DIR$/config2.py" afterDir="false" />
     </list>
@@ -71,8 +71,8 @@
       <file leaf-file-name="Benchmark.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="260">
+              <caret line="248" column="1" selection-start-line="248" selection-start-column="1" selection-end-line="248" selection-end-column="1" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -80,20 +80,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Benchmark_advanced.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Benchmark_advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
+            <state relative-caret-position="3723">
+              <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Benchmark_Expert.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Benchmark_Expert.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="1173">
+              <caret line="129" column="2" lean-forward="true" selection-start-line="129" selection-start-column="2" selection-end-line="129" selection-end-column="2" />
               <folding>
                 <element signature="e#72#92#0" expanded="true" />
               </folding>
@@ -104,8 +104,8 @@
       <file leaf-file-name="config2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
+            <state relative-caret-position="277">
+              <caret line="198" column="19" lean-forward="true" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#699#1679#0" />
@@ -155,14 +155,14 @@
         <option value="$PROJECT_DIR$/Cura341/Config2.py" />
         <option value="$PROJECT_DIR$/benchmark270.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/config2.py" />
         <option value="$PROJECT_DIR$/Benchmark.py" />
-        <option value="$PROJECT_DIR$/Benchmark_Expert.py" />
         <option value="$PROJECT_DIR$/Benchmark_advanced.py" />
+        <option value="$PROJECT_DIR$/Benchmark_Expert.py" />
+        <option value="$PROJECT_DIR$/config2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="524" />
     <option name="height" value="735" />
@@ -173,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,7 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Benchmark_advanced">
+  <component name="RunManager" selected="Python.Benchmark_Expert">
     <configuration name="Benchmark" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CuraBenchmark" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,9 +275,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Benchmark_Expert" />
         <item itemvalue="Python.Benchmark_advanced" />
         <item itemvalue="Python.Benchmark" />
-        <item itemvalue="Python.Benchmark_Expert" />
       </list>
     </recent_temporary>
   </component>
@@ -320,22 +320,22 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19281046" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32629558" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3251634" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3267974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32629558" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -430,10 +430,27 @@
     <entry file="file://$PROJECT_DIR$/Pictures/31/file_to_drag.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Benchmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="248" column="1" selection-start-line="248" selection-start-column="1" selection-end-line="248" selection-end-column="1" />
+          <folding>
+            <element signature="e#51#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="245" column="1" selection-start-line="245" selection-start-column="1" selection-end-line="245" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="203" column="23" lean-forward="true" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
+        <state relative-caret-position="277">
+          <caret line="198" column="19" lean-forward="true" selection-start-line="198" selection-start-column="19" selection-end-line="198" selection-end-column="19" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#699#1679#0" />
@@ -443,30 +460,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Benchmark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#51#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Benchmark_Expert.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="1173">
+          <caret line="129" column="2" lean-forward="true" selection-start-line="129" selection-start-column="2" selection-end-line="129" selection-end-column="2" />
           <folding>
             <element signature="e#72#92#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Benchmark_advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
         </state>
       </provider>
     </entry>

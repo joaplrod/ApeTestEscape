@@ -74,7 +74,7 @@ pya.hotkey('esc')
 time.sleep(1.5)
 pya.click(width // 3, height // 3)
 
-file_location = C2.findTarget(C2.imgexptest)
+file_location = C2.findTarget(C2.imgexptest, C2.Q3)
 print('File location found: ', file_location[:-1])
 
 # Actually drag and drop the file

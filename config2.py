@@ -187,9 +187,12 @@ def TypeTextinTextBox(sentence, btn_locat):
     pya.typewrite(sentence[1:], interval=0.5)
     
 def ResetExtraset():
-    custombtn = findTarget(imgcustombtn, (width *2 // 3, 0, width, height))
-    #custombtn = findTarget(imgcustombtn)
-    pya.click(custombtn[0], custombtn[1])
+
+    for i in range(2):
+        custombtn = findTarget(imgcustombtn, (width *2 // 3, 0, width, height))
+        pya.click(custombtn[0], custombtn[1])
+
+    print("could not find Custom settings")
     profilebtn = findTarget(imgresetcustomsett, (width *2 // 3, 0, width, height))
     pya.click(profilebtn[0], profilebtn[1])
     time.sleep(1)
