@@ -30,13 +30,17 @@ start_scp = time.time()
 
 # Chose which version must be tested
 #cura_version = "3.4.1"
-#cura_version = "3.4.99"
-cura_version = "3.0.4"
+#cura_version = "3.0.4"
 #cura_version = "3.1"
 #cura_version = "3.2.0"
-#cura_version = "3.2.99"
+#cura_version = "3.2.1"
 #cura_version = "3.3"
 #cura_version = "3.4.0"
+cura_version = "3.4.1"
+
+# From monolith
+#cura_version = "3.4.99"
+#cura_version = "3.2.99"
 #cura_version = "3.4.99"
 
 
@@ -78,14 +82,14 @@ file_location = C2.findTarget(C2.imgexptest, C2.Q3)
 print('File location found: ', file_location[:-1])
 
 # Actually drag and drop the file
-pya.moveTo(file_location[0], file_location[1])
+pya.moveTo(file_location[:-1])
 time.sleep(0.5)
 pya.dragTo(width*3//5, height//2, button='left',duration=1)
 pya.click()
 
 file_loaded = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 # Store Prepare btn locat
-prepare_btn = (file_loaded[0], file_loaded[1])
+prepare_btn = (file_loaded[:-1])
 print("The time that took to load the complex .STL file was: " + str(file_loaded[2]))
 
 # Maximize Cura
@@ -100,7 +104,7 @@ prepare_btn = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 print(prepare_btn)
 
 
-pya.click(prepare_btn[0], prepare_btn[1]) # Press Prepare (To Slice)
+pya.click(prepare_btn[:-1]) # Press Prepare (To Slice)
 pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img changes if the cursor is in it)
 
 model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
@@ -167,21 +171,24 @@ C2.ClearTextBox(textbxbtn)
 C2.TypeTextinTextBox('fuzzy skin', textbxbtn)
 
 fzyskbtn = C2.findTarget(C2.imgfuzsk, (width*2//3,0,width,height))
-pya.click(fzyskbtn[0], fzyskbtn[1])
+pya.click(fzyskbtn[:-1])
 
 
-pya.click(prepare_btn[0], prepare_btn[1]) # Press Prepare (To Slice)
+pya.click(prepare_btn[:-1]) # Press Prepare (To Slice)
 pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img changes if the cursor is in it)
 
 modif_model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the complex .STL file with modifications was: " + str(modif_model_sliced[2]))
 
+recombtn = C2.findTarget(C2.imgrecombtn, C2.Q7)
+pya.click(recombtn[:-1])
 
+print("Test finished")
 
 #Load info in excel file
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsExpCuraBenchmark.txt','a')
 
-f.write('Test for Cura' + str(cura_version) + ' started...')
+f.write('Test for Cura ' + str(cura_version) + ' started...')
 f.write('\n')
 f.write("---> Time to open Cura is: " +  str(Cura_opened[2]))
 f.write('\n')
@@ -201,4 +208,4 @@ f.close()
 #C2.CloseCura()
 C2.CloseCura()
 print("Test is finished...")
-pya.alert("Test is finished...")
+#pya.alert("Test is finished...")

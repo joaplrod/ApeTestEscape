@@ -32,12 +32,13 @@ start_scp = time.time()
 # Chose which version must be tested
 #cura_version = "3.4.1"
 #cura_version = "3.4.99"
-cura_version = "3.0.4"
-#cura_version = "3.1"
+#cura_version = "3.4.1"
+cura_version = "3.2.1"
 #cura_version = "3.2.0"
 #cura_version = "3.2.99"
 #cura_version = "3.3"
 #cura_version = "3.4.0"
+#cura_version = "3.4.1"
 #cura_version = "3.4.99"
 
 
@@ -202,13 +203,13 @@ print("The time that took to slice after moving the models was: " + str(DnD3_sli
 #pya.click()
 C2.MaxScreen()
 
-
+print("Test finished")
 #pya.alert("Done. " + str(time.time() - start_scp))
 
 #Load info in excel file
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsAdvCuraBenchmark.txt','a')
 
-f.write('Test for Cura' + str(cura_version) + ' started...')
+f.write('Test for Cura ' + str(cura_version) + ' started...')
 f.write('\n')
 f.write("---> Time to open Cura is: " +  str(Cura_opened[2]))
 f.write('\n')
@@ -230,11 +231,11 @@ f.write("The time that took to slice after mirroring the models was: " + str(mir
 f.write('\n')
 f.write("The time that took to move the 6 .stl model was: " + str(move_finished[2]))
 f.write('\n')
-f.write("The time that took to slice after noving the models was: " + str(mov_sliced[2]))
+f.write("The time that took to slice after moving the models was: " + str(mov_sliced[2]))
 f.write('\n')
 f.write("The time that took to Drag n Drop the 3 files was: " + str(DnD3_loaded[2]))
 f.write('\n')
-f.write("The time that took to slice after noving the models was: " + str(DnD3_sliced[2]))
+f.write("The time that took to slice after dropping the models was: " + str(DnD3_sliced[2]))
 f.write('\n')
 f.write("---> Time to run the script was: " + str(time.time() - start_scp))
 f.write('\n')

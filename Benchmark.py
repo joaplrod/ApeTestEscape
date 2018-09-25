@@ -29,9 +29,9 @@ import time
 width, height = pya.size()
 
 # Chose which version must be tested
-cura_version = "2.7"
-#cura_version = "3.4.1"
-#cura_version = "3.4.99"
+
+
+cura_version = "3.4.1"
 #cura_version = "3.0.4"
 #cura_version = "3.1"
 #cura_version = "3.2.0"
@@ -220,7 +220,7 @@ print("The time that took to send the gcode was: " + str(gcodesent[2]))
 #Load info in excel file
 f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsCuraBenchmark.txt','a')
 
-f.write('Test for Cura' + str(cura_version) + ' started...')
+f.write('Test for Cura ' + str(cura_version) + ' started...')
 f.write('\n')
 f.write("---> Time to open Cura is: " +  str(Cura_opened[2]))
 f.write('\n')

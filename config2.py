@@ -89,7 +89,7 @@ def OpenCura(version):
     os.startfile(path)
 
 
-def findTarget(TargetImg, Q=(0, 0, width, height)):
+def findTarget(TargetImg, Q=(0, 0, width, height), attempts=10):
     """ Find the picture and measure the time it takes """
     tinit = time.time()
     Locat_n_Time = None
@@ -103,7 +103,7 @@ def findTarget(TargetImg, Q=(0, 0, width, height)):
 def layerviewOnOff(mode):
     """ Switches LayerView ON or OFF depending on the parameter"""
     layerview = findTarget(imgViewLabel, Q2)
-    pya.click(layerview[0], layerview[1])
+    pya.click(layerview[:-1])
     time.sleep(1)
 
     pya.hotkey('down')
@@ -188,13 +188,10 @@ def TypeTextinTextBox(sentence, btn_locat):
     
 def ResetExtraset():
 
-    for i in range(2):
-        custombtn = findTarget(imgcustombtn, (width *2 // 3, 0, width, height))
-        pya.click(custombtn[0], custombtn[1])
-
-    print("could not find Custom settings")
+    custombtn = findTarget(imgcustombtn, Q1)  #(width *2 // 3, 0, width, height)
+    pya.click(custombtn[:-1])
     profilebtn = findTarget(imgresetcustomsett, (width *2 // 3, 0, width, height))
-    pya.click(profilebtn[0], profilebtn[1])
+    pya.click(profilebtn[:-1])
     time.sleep(1)
     pya.hotkey('d')
 
