@@ -25,6 +25,7 @@ import time
 # |  Q3  |  Q4   |      |   | Q6  |    |      |''''''|'''''''|
 # '------|-------'      '--------------'      '--------------'
 
+
 width, height = pya.size()
 start_scp = time.time()
 
@@ -46,9 +47,8 @@ cura_version = "3.4.1"
 
 C2.LoadExpertVariables(cura_version)
 print("Test for " + cura_version + " started...")
-
-time.sleep(5)
-
+C2.BenchRes['version'] = str(cura_version)
+C2.BenchRes['date'] = time.strftime('%a, %d %b %Y %H:%M:%S', time.gmtime())
 
 # Go to desktop (To clear the screen)
 pya.hotkey('win','d')
@@ -61,6 +61,8 @@ pya.click(width//2, height //2)
 C2.OpenCura(cura_version)
 Cura_opened = C2.findTarget(C2.imgIsCuraOpened, C2.Q2)
 print("The time that took to open Cura was: " + str(Cura_opened[2]))
+C2.BenchRes['Scenario']['Expert']['Open Cura']['time'] = str(Cura_opened[-1])
+
 # Maximize Cura
 C2.MaxScreen()
 
@@ -91,6 +93,7 @@ file_loaded = C2.findTarget(C2.imgPreparebtn, C2.Q4)
 # Store Prepare btn locat
 prepare_btn = (file_loaded[:-1])
 print("The time that took to load the complex .STL file was: " + str(file_loaded[2]))
+C2.BenchRes['Scenario']['Expert']['DnD']['time'] = str(file_loaded[-1])
 
 # Maximize Cura
 C2.MaxScreen()
@@ -109,6 +112,7 @@ pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img change
 
 model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the complex .STL file was: " + str(model_sliced[2]))
+C2.BenchRes['Scenario']['Expert']['SliceStl']['time'] = str(model_sliced[-1])
 
 #       #####################
 #       #### Layer View #####
@@ -118,6 +122,7 @@ C2.layerviewOnOff('on')
 
 layerviewloaded = C2.findTarget(C2.imgLayerView, C2.Q7)
 print("The time that took to show the Layer View was: " + str(layerviewloaded[2]))
+C2.BenchRes['Scenario']['Expert']['LayerView Stl']['time'] = str(layerviewloaded[-1])
 
 C2.layerviewOnOff('off')
 
@@ -179,33 +184,10 @@ pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img change
 
 modif_model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the complex .STL file with modifications was: " + str(modif_model_sliced[2]))
+C2.BenchRes['Scenario']['Expert']['Slice changed model']['time'] = str(modif_model_sliced[-1])
 
-recombtn = C2.findTarget(C2.imgrecombtn, C2.Q7)
-pya.click(recombtn[:-1])
-
-print("Test finished")
-
-#Load info in excel file
-f = open(r'C:\Users\System-Testing\PycharmProjects\CuraBenchmark\ResultsExpCuraBenchmark.txt','a')
-
-f.write('Test for Cura ' + str(cura_version) + ' started...')
-f.write('\n')
-f.write("---> Time to open Cura is: " +  str(Cura_opened[2]))
-f.write('\n')
-f.write("---> Time to Drag n Drop is: "+ str(file_loaded[2]))
-f.write('\n')
-f.write("---> Time to slice the '.stl' is: " + str(model_sliced[2]))
-f.write('\n')
-f.write("---> Time to show Layer view is of the .stl is: " + str(layerviewloaded[2]))
-f.write('\n')
-f.write("---> Time to load modified .stl file is: "+ str(modif_model_sliced[2]))
-f.write('\n')
-f.write("---> Time to run the script was: " + str(time.time() - start_scp))
-f.write('\n')
-f.write('\n')
-f.close()
-
-#C2.CloseCura()
+#Load info in excel file - Future step
+C2.writeFile('Expert')
 C2.CloseCura()
 print("Test is finished...")
 #pya.alert("Test is finished...")

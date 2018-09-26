@@ -19,6 +19,50 @@ Q7 = [width // 2, height // 3, width, height * 2 // 3]
 Q8 = [0, height // 3, width // 2, height * 2 // 3]
 
 
+
+#### DICTIONARY VARIABLES
+BenchRes = {
+    "version": "whichever",
+    "date": "ddmmyy time",
+    "Scenario": {
+        "Normal": {
+            "Open Cura": {"text": "---> Time to open Cura is: ", "time": "234"},
+            "DnD": {"text": "---> Time to Drag n Drop is: ", "time": "234"},
+            "SliceStl": {"text": "---> Time to slice the '.stl' is: ", "time": "234"},
+            "LayerView Stl": {"text": "---> Time to show Layer view of the .stl is: ", "time": "234"},
+            "PrintStl": {"text": "---> Time to send print over network is: ", "time": "234"},
+            "Load 3mf": {"text": "---> Time to load the project file is: ", "time": "234"},
+            "Slice 3mf": {"text": "---> Time to slice the project file is: ", "time": "234"},
+            "LayerView 3mf": {"text": "---> Time to show Layer view of the project file is: ", "time": "234"},
+            "Print 3mf": {"text": "---> Time to send the project file printjob is: ", "time": "234"},
+            "Load gcode": {"text": "---> Time to load the gcode is: ", "time": "234"},
+            "Print gcode": {"text": "---> Time to send the gcode printjob is: ", "time": "234"},
+            "Running time": {"text": "---> Time to run the script was: ", "time": "234"}},
+
+        "Advanced": {
+            "Open Cura": {"text": "---> Time to open Cura is: ", "time": "234"},
+            "Load Stl": {"text": "---> The time that took to load the .stl model was: ", "time": "234"},
+            "Slice 20stl": {"text": "The time that took to slice 21 models was: ", "time": "234"},
+            "RotatedSlice": {"text": "The time that took to slice after rotating the models was: ", "time": "234"},
+            "MovenSlice": {"text": "The time that took to slice after moving the models was: ", "time": "234"},
+            "MirrornSlice": {"text": "The time that took to slice after mirroring the models was: ", "time": "234"},
+            "DnD": {"text": "The time that took to Drag n Drop the 3 files was: ", "time": "234"},
+            "Slice All": {"text": "The time that took to slice all the models was: ", "time": "234"},
+            "Running time": {"text": "---> Time to run the script was: ", "time": "234"}},
+
+        "Expert": {
+            "Start test": {"text": "---> Test for Cura", "version": "234"},
+            "Open Cura": {"text": "---> Time to open Cura is: ", "time": "234"},
+            "DnD": {"text": "---> Time to Drag n Drop is: ", "time": "234"},
+            "SliceStl": {"text": "---> Time to slice the '.stl' is: ", "time": "234"},
+            "LayerView Stl": {"text": "---> Time to show Layer view of the .stl is: ",
+                              "time": "234"},
+            "Slice changed model": {
+                "text": "---> The time that took to slice the complex .STL file with modifications was: ",
+                "time": "234"},
+            "Running time": {"text": "---> Time to run the script was: ", "time": "234"}}}}
+
+
 #       ###################
 #       #### FUNCTIONS ####
 #       ###################
@@ -126,7 +170,7 @@ def cleanBP():
 def OpenFile(name):
     """ To open a project file / gcode already located in the default open folder (Downloads in this case) """
     pya.hotkey('ctrl', 'o')
-    time.sleep(1)
+    time.sleep(4)
     pya.typewrite(name)
     time.sleep(1.5)
     pya.hotkey('enter')
@@ -141,9 +185,9 @@ def MaxScreen():
     """ Maximizes the front window """
     for i in range(0, 2, 1):
         pya.hotkey('win', 'up')
-        time.sleep(1.5)
+        time.sleep(2)
         pya.hotkey("esc")
-        time.sleep(1.5)
+        time.sleep(1)
 
 
 def MultiModel(n):
@@ -188,8 +232,8 @@ def TypeTextinTextBox(sentence, btn_locat):
     
 def ResetExtraset():
 
-    custombtn = findTarget(imgcustombtn, Q1)  #(width *2 // 3, 0, width, height)
-    pya.click(custombtn[:-1])
+    #custombtn = findTarget(imgcustombtn, Q1)  #(width *2 // 3, 0, width, height)
+    #pya.click(custombtn[:-1])
     profilebtn = findTarget(imgresetcustomsett, (width *2 // 3, 0, width, height))
     pya.click(profilebtn[:-1])
     time.sleep(1)
@@ -200,5 +244,30 @@ def ResetExtraset():
 
 def CloseCura():
     pya.hotkey('alt','F4')
-    pya.click(1,1)
-    pya.hotkey('enter')
+
+
+def writeFile(script):
+    d = os.getcwd()
+    if (str(script) == 'Normal'):
+        d = d + '\ResultsCuraBenchmark.txt'
+        sce = 'Normal'
+    elif (str(script) == 'Advanced.py'):
+        d = d + '\RResultsAdvCuraBenchmark.txt'
+        sce = 'Advanced'
+    else:
+        d = d + '\RResultsExpCuraBenchmark.txt'
+        sce = 'Expert'
+
+    f = open(d, 'a')
+    f.write('---> Test for Cura ' + str(BenchRes['version']) + ' Date: ' + str(BenchRes['date']))
+    f.write('\n')
+    for k, v in BenchRes['Scenario'][sce].items():
+        for k1, v1 in v.items():
+            if (str(k1) == 'text'):
+                tmpvar = v1
+            else:
+                f.write(str(tmpvar) + ' : ' + str(v1))
+        f.write('\n')
+    f.write('\n')
+    f.write('\n')
+    f.close()
