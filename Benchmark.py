@@ -30,13 +30,13 @@ width, height = pya.size()
 start_scp = time.time()
 # Chose which version must be tested
 
-
-cura_version = "3.4.1"
+#cura_version = "3.5"
+#cura_version = "3.4.1"
 #cura_version = "3.0.4"
 #cura_version = "3.1"
 #cura_version = "3.2.0"
 #cura_version = "3.2.99"
-#cura_version = "3.3"
+cura_version = "3.3"
 #cura_version = "3.4.0"
 #cura_version = "3.4.99"
 

@@ -32,12 +32,14 @@ start_scp = time.time()
 # Chose which version must be tested
 #cura_version = "3.4.1"
 #cura_version = "3.0.4"
-#cura_version = "3.1"
+cura_version = "3.1"
 #cura_version = "3.2.0"
 #cura_version = "3.2.1"
+#cura_version = "3.3.1"
 #cura_version = "3.3"
 #cura_version = "3.4.0"
-cura_version = "3.4.1"
+#cura_version = "3.4.1"
+#cura_version = "3.5"
 
 # From monolith
 #cura_version = "3.4.99"
@@ -185,6 +187,7 @@ pya.moveTo(width//2,height//2)  # Move cursor out of prepare btn (The img change
 modif_model_sliced = C2.findTarget(C2.imgReady2print, C2.Q4)
 print("The time that took to slice the complex .STL file with modifications was: " + str(modif_model_sliced[2]))
 C2.BenchRes['Scenario']['Expert']['Slice changed model']['time'] = str(modif_model_sliced[-1])
+C2.BenchRes['Scenario']['Expert']['Running time']['time'] = str(time.time() - start_scp)
 
 #Load info in excel file - Future step
 C2.writeFile('Expert')

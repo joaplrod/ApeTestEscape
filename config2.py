@@ -42,21 +42,19 @@ BenchRes = {
         "Advanced": {
             "Open Cura": {"text": "---> Time to open Cura is: ", "time": "234"},
             "Load Stl": {"text": "---> The time that took to load the .stl model was: ", "time": "234"},
-            "Slice 20stl": {"text": "The time that took to slice 21 models was: ", "time": "234"},
-            "RotatedSlice": {"text": "The time that took to slice after rotating the models was: ", "time": "234"},
-            "MovenSlice": {"text": "The time that took to slice after moving the models was: ", "time": "234"},
-            "MirrornSlice": {"text": "The time that took to slice after mirroring the models was: ", "time": "234"},
-            "DnD": {"text": "The time that took to Drag n Drop the 3 files was: ", "time": "234"},
-            "Slice All": {"text": "The time that took to slice all the models was: ", "time": "234"},
+            "Slice 20stl": {"text": "---> The time that took to slice 21 models was: ", "time": "234"},
+            "RotatedSlice": {"text": "---> The time that took to slice after rotating the models was: ", "time": "234"},
+            "MovenSlice": {"text": "---> The time that took to slice after moving the models was: ", "time": "234"},
+            "MirrornSlice": {"text": "---> The time that took to slice after mirroring the models was: ", "time": "234"},
+            "DnD": {"text": "---> The time that took to Drag n Drop the 3 files was: ", "time": "234"},
+            "Slice All": {"text": "---> The time that took to slice all the models was: ", "time": "234"},
             "Running time": {"text": "---> Time to run the script was: ", "time": "234"}},
 
         "Expert": {
-            "Start test": {"text": "---> Test for Cura", "version": "234"},
             "Open Cura": {"text": "---> Time to open Cura is: ", "time": "234"},
             "DnD": {"text": "---> Time to Drag n Drop is: ", "time": "234"},
             "SliceStl": {"text": "---> Time to slice the '.stl' is: ", "time": "234"},
-            "LayerView Stl": {"text": "---> Time to show Layer view of the .stl is: ",
-                              "time": "234"},
+            "LayerView Stl": {"text": "---> Time to show Layer view of the .stl is: ", "time": "234"},
             "Slice changed model": {
                 "text": "---> The time that took to slice the complex .STL file with modifications was: ",
                 "time": "234"},
@@ -137,7 +135,7 @@ def findTarget(TargetImg, Q=(0, 0, width, height), attempts=10):
     """ Find the picture and measure the time it takes """
     tinit = time.time()
     Locat_n_Time = None
-    print('entered in the loop')
+    #print('entered in the loop')
     while (Locat_n_Time is None):
         Locat_n_Time = pya.locateCenterOnScreen(TargetImg, region=(Q), grayscale=True)
     Locat_n_Time += ((time.time() - tinit),)
@@ -251,15 +249,15 @@ def writeFile(script):
     if (str(script) == 'Normal'):
         d = d + '\ResultsCuraBenchmark.txt'
         sce = 'Normal'
-    elif (str(script) == 'Advanced.py'):
-        d = d + '\RResultsAdvCuraBenchmark.txt'
+    elif (str(script) == 'Advanced'):
+        d = d + '\ResultsAdvCuraBenchmark.txt'
         sce = 'Advanced'
     else:
-        d = d + '\RResultsExpCuraBenchmark.txt'
+        d = d + '\ResultsExpCuraBenchmark.txt'
         sce = 'Expert'
 
     f = open(d, 'a')
-    f.write('---> Test for Cura ' + str(BenchRes['version']) + ' Date: ' + str(BenchRes['date']))
+    f.write('Test for Cura ' + str(BenchRes['version']) + ' Date: ' + str(BenchRes['date']))
     f.write('\n')
     for k, v in BenchRes['Scenario'][sce].items():
         for k1, v1 in v.items():
